@@ -1,0 +1,1010 @@
+body {
+    
+    margin: 0;
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #ffe6f0, #f3e8ff, #e6f7ff);
+    font-family: Arial, sans-serif;
+
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: radial-gradient(circle at top left, rgba(255, 105, 180, 0.15), transparent 50%),
+                radial-gradient(circle at bottom right, rgba(0, 200, 255, 0.12), transparent 50%);
+
+    pointer-events: none;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: 0;
+    margin-bottom: 0.3em;
+}
+.lang-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.lang-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 999px;
+
+    background: #ffd1dc;
+    color: #5a2a33;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.25);
+}
+
+.lang-btn:hover {
+    background: #ffb6c1;
+    transform: translateY(-2px);
+}
+
+/* This is the class JS adds to keep the button highlighted */
+.lang-btn.active {
+    background: #ff8fa3; 
+    color: white;
+    box-shadow: 0 6px 14px rgba(255, 143, 163, 0.35);
+    font-weight: bold;
+}
+.hero {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    max-width: 1200px;
+    gap: 100px;
+
+    margin: 0 auto;
+
+       padding: 120px 80px;
+
+
+    position: relative;
+}
+.film-container {
+
+    position: relative;
+
+     width: 40vw;
+    max-width: 600px;
+
+    transform: rotate(5deg);
+}
+.film-frame {
+
+    width: 100%;
+
+    display: block;
+}
+.film-photo {
+
+    position: absolute;
+
+    top: 16%;
+    left: 5%;
+
+    width: 92%;
+    height: 69%;
+
+    object-fit: cover;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+
+.floating-heart {
+
+position: absolute;
+top: 100px;
+left: 50px;
+
+width: 50px;
+
+animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+0% {
+transform: translateY(0);
+}
+
+50% {
+transform: translateY(-10px);
+}
+
+100% {
+transform: translateY(0);
+}
+
+}
+.floating-cheese{
+    position: absolute;
+top: 600px;
+left: 500px;
+
+width: 50px;
+
+animation: float 4s ease-in-out infinite;}
+@keyframes float {
+
+0% {
+transform: translateY(0);
+}
+
+50% {
+transform: translateY(-10px);
+}
+
+100% {
+transform: translateY(0);
+}}
+
+.teddy {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 80px;
+
+    opacity: 0.9;
+
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+
+    animation: float 5s ease-in-out infinite;
+}
+.polaroid {
+
+background: white;
+
+padding: 15px;
+
+width: 250px;
+
+box-shadow:
+0 4px 15px rgba(0,0,0,.15);
+
+transform: rotate(-4deg);
+
+border-radius: 5px;
+
+    width: 280px;
+    background: white;
+    padding: 12px 12px 40px 12px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+.polaroid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.songs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+.song-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 14px;
+    margin: 10px 0;
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.song-card:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.6);
+}
+.song-cover {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 10px;
+    object-fit: cover;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.song-details {
+    flex: 0 0 180px;
+    min-width: 0;
+}
+.song-details h3 {
+
+    margin: 0;
+font-size: 1rem;
+    color: palevioletred;
+}
+
+.song-details p {
+
+    margin: 3px 0 0;
+    font-size: 0.85rem;
+    color: pink;
+}
+.song-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 12px 14px;
+    margin: 10px 0;
+
+    border-radius: 16px;
+
+    width: 100%;
+}
+.song-card audio {
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+
+    width: 100%;
+    height: 34px;
+}
+.song-card.playing {
+    background: rgba(255, 182, 193, 0.35);
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.4);
+}
+.playlist-btn {
+    display: block;
+    margin: 20px auto 0;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 999px;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    color: #5a2a33;
+
+    background: linear-gradient(135deg, #ffd1dc, #ffe6f0, #f3e8ff);
+
+    box-shadow: 0 6px 18px rgba(255, 182, 193, 0.35);
+
+    transition: all 0.25s ease;
+
+    backdrop-filter: blur(8px);
+}
+.playlist-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.5);
+
+    background: linear-gradient(135deg, #ffb6c1, #ffd1dc, #e6f7ff);
+}
+.playlist-btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+}
+.playlist-btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.heart-particle {
+    position: fixed;
+    font-size: 14px;
+
+    color: rgba(255, 182, 193, 0.6);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation: floatHeart 6s linear forwards;
+}
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-150px) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.song-card, .songs, .playlist-btn {
+    position: relative;
+    z-index: 2;
+}
+.container {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* stack */
+.polaroid-stack {
+  position: relative;
+  width: 220px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.polaroid {
+  position: absolute;
+  width: 220px;
+  height: 260px;
+  object-fit: cover;
+  border: 10px solid white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.6s ease, opacity 0.4s ease;
+}
+
+.spread-area {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+}
+
+.spread {
+    position: absolute;
+    width: 180px;
+    height: 220px;
+    border: 10px solid white;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+
+     transition: scale .25s ease;
+    transform-origin: center center;
+}
+
+.spread:hover {
+    scale: 1.08;
+    z-index: 999;
+}
+.polaroid, .spread {
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.4s ease;
+  will-change: transform;
+}
+.music-game {
+    text-align: center;
+    margin: 80px auto;
+}
+
+#game-area {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+
+    margin: 30px auto;
+
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255,255,255,0.08);
+}
+
+.note {
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+
+    user-select: none;
+
+    animation: fall 4s linear forwards;
+
+    transition: transform .2s ease;
+}
+
+.note:hover {
+    transform: scale(1.2);
+}
+
+@keyframes fall {
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 450px;
+    }
+}
+
+#reward {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.gold{
+
+    color:gold;
+
+    filter:drop-shadow(0 0 10px gold);
+
+}
+
+.bomb{
+
+    filter:grayscale(.2);
+
+}
+
+.burst-heart{
+
+    position:fixed;
+
+    pointer-events:none;
+
+    font-size:20px;
+
+    animation:burst .8s forwards;
+
+    z-index:9999;
+
+}
+
+@keyframes burst{
+
+    from{
+
+        opacity:1;
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+    to{
+
+        opacity:0;
+
+        transform:
+        translate(var(--dx),var(--dy))
+        scale(.2);
+
+    }
+
+}
+
+#reward{
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    transition:.7s;
+
+}
+
+#reward:not([hidden]){
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.secret-polaroid{
+
+display:none;
+
+width:260px;
+
+margin:40px auto;
+
+padding:15px 15px 55px;
+
+background:white;
+
+border-radius:8px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+transform:rotate(-3deg);
+
+animation:rewardAppear .8s ease forwards;
+
+}
+
+.secret-polaroid img{
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:4px;
+
+display:block;
+
+}
+
+.polaroid-caption{
+
+margin-top:18px;
+
+font-family:'Patrick Hand', cursive;
+
+font-size:24px;
+
+text-align:center;
+
+color:#d86a96;
+
+}
+@keyframes rewardAppear{
+
+0%{
+
+opacity:0;
+
+transform:scale(.4) rotate(-15deg);
+
+}
+
+60%{
+
+transform:scale(1.08) rotate(3deg);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:scale(1) rotate(-3deg);
+
+}
+
+}
+.music-game{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+.music-showcase{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:40px;
+
+width:40%;
+
+}
+
+.vinyl{
+
+width:320px;
+
+height:320px;
+
+border-radius:50%;
+
+background:
+radial-gradient(circle,
+#fff9fb 0%,
+#ffe5ef 20%,
+#ffc9de 45%,
+#f2a4c2 70%,
+#d47aa5 100%);
+position:relative;
+
+box-shadow:
+0 30px 60px rgba(0,0,0,.35);
+
+animation:spin 10s linear infinite;
+
+}
+
+.record-center{
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+width:90px;
+
+height:90px;
+
+border-radius:50%;
+
+
+background:#ffb3c7;
+
+border:4px solid white;
+
+box-shadow:0 0 25px rgba(255,179,199,.6);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:30px;
+
+font-weight:bold;
+
+color:white;
+
+
+}
+
+.vinyl::before{
+
+content:"";
+
+position:absolute;
+
+inset:15px;
+
+border-radius:50%;
+
+background:
+repeating-radial-gradient(
+
+circle,
+
+transparent 0px,
+
+transparent 6px,
+
+rgba(255,255,255,.08) 7px,
+
+transparent 8px
+
+);
+
+}
+
+.vinyl::after{
+
+content:"";
+
+position:absolute;
+
+inset:45px;
+
+border-radius:50%;
+
+border:2px solid rgba(255,255,255,.05);
+
+}
+
+@keyframes spin{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+.visualizer{
+
+display:flex;
+
+gap:8px;
+
+height:70px;
+
+align-items:flex-end;
+
+}
+
+.visualizer span{
+
+width:10px;
+
+height:20px;
+
+background:#f062a6;
+
+border-radius:20px;
+
+animation:bounce 1s infinite ease-in-out;
+
+animation-play-state:paused;
+
+}
+
+.visualizer span:nth-child(2){
+
+animation-delay:.15s;
+
+}
+
+.visualizer span:nth-child(3){
+
+animation-delay:.3s;
+
+}
+
+.visualizer span:nth-child(4){
+
+animation-delay:.45s;
+
+}
+
+.visualizer span:nth-child(5){
+
+animation-delay:.6s;
+
+}
+
+.visualizer span:nth-child(6){
+
+animation-delay:.75s;
+
+}
+
+.visualizer span:nth-child(7){
+
+animation-delay:.9s;
+
+}
+
+.visualizer span:nth-child(8){
+
+animation-delay:1.05s;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+height:20px;
+
+}
+
+50%{
+
+height:65px;
+
+}
+
+}
+.record-center img{
+
+width:100%;
+
+height:100%;
+
+border-radius:50%;
+
+object-fit:cover;
+
+}
+.hidden-lemonade{
+
+position:fixed;
+
+left:40px;
+
+bottom:140px;
+
+width:70px;
+
+cursor:pointer;
+
+transition:.3s;
+
+opacity:.5;
+
+z-index:30;
+
+animation:floatDrink 5s ease-in-out infinite;
+
+}
+
+.hidden-lemonade:hover{
+
+transform:scale(1.1);
+
+opacity:1;
+
+}
+
+.hidden-lemonade img{
+
+width:100%;
+
+}
+
+@keyframes floatDrink{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+#lemon-message{
+
+position:fixed;
+
+left:120px;
+
+bottom:170px;
+
+background:white;
+
+padding:12px 18px;
+
+border-radius:18px;
+
+font-weight:bold;
+
+color:#e59b00;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.4s;
+
+z-index:50;
+
+}
+/* --- The Base Button Styling --- */
+.love-btn {
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%); /* Soft romantic gradient */
+    color: white;
+    font-size: 1.2rem;
+    font-family: inherit; /* Matches the rest of your site's font */
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px; /* Perfectly pill-shaped */
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Attaches the heartbeat pulse animation below */
+    animation: heartPulse 2s infinite; 
+}
+
+/* --- The Hover Effect --- */
+.love-btn:hover {
+    transform: translateY(-3px) scale(1.05); /* Lifts up and gets slightly bigger */
+    box-shadow: 0 8px 25px rgba(255, 117, 140, 0.6); /* Glow gets stronger */
+    animation: none; /* Stops pulsing while they hover over it */
+}
+
+/* --- The Beating Heart Animation --- */
+@keyframes heartPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 117, 140, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(255, 117, 140, 0); /* Ring expands and fades out */
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 117, 140, 0);
+    }
+}
+/* --- Centers the button and the text together --- */
+.secret-container {
+    display: flex;
+    flex-direction: column; /* Stacks the text right below the button */
+    align-items: center;    /* Centers everything horizontally */
+    justify-content: center; 
+    margin: 40px auto;      /* Adds nice breathing room above and below */
+    text-align: center;
+}
+
+/* --- Styles the secret message to match the romantic vibe --- */
+.secret-message {
+    margin-top: 20px;       /* Adds a gap between the button and text */
+    font-size: 1.2rem;
+    color: #ff758c;         /* Matches the pink from your button gradient */
+    font-weight: bold;
+    font-family: inherit;
+    animation: fadeIn 0.8s ease-in; /* A gentle fade-in effect when it appears */
+}
+
+/* --- The fade-in animation for the text --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Slides down slightly as it fades in */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

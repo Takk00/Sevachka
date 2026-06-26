@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<div class="lang-buttons">
+
+    <button id="lang-en" class="lang-btn active" onclick="changeLanguage('en')">
+        en
+    </button>
+
+    <button id="lang-ka" class="lang-btn" onclick="changeLanguage('ka')">
+        🇬🇪
+    </button>
+
+    <button id="lang-ru" class="lang-btn" onclick="changeLanguage('ru')">
+        🇷🇺
+    </button>
+
+    <button id="lang-ua" class="lang-btn" onclick="changeLanguage('ua')">
+        ua
+    </button>
+</div>
+
+
+
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>molodchynke</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="hero">
+
+
+        <div class="hero-text">
+
+            <h1 id="title">Hey, Seviko 💞</h1>
+            <p id="welcome">Because you're against Spotify, I thought I'd bring you a playlist from it anyway.</p>
+
+
+        </div>
+
+        <div class="music-showcase">
+
+            <div class="vinyl-player">
+
+                <div class="vinyl">
+
+                    <div class="record-center">
+                        <img src="photos/photo1.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="visualizer">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <img src="assets/heart11.png" class="floating-heart">
+
+    <img src="assets/cheese_PNG11.png" class="floating-cheese">
+
+    <img src="assets/teddy_bear_PNG116.png" class="teddy">
+    <div class="container">
+        <div class="polaroid-stack" id="stack">
+            <img src="photos/photo5.jpg" class="polaroid" />
+            <img src="photos/photo2.jpg" class="polaroid" />
+            <img src="photos/photo3.jpg" class="polaroid" />
+            <img src="photos/photo10.jpg" class="polaroid" />
+            <img src="photos/photo8.jpg" class="polaroid" />
+
+
+        </div>
+        <div class="spread-area" id="spreadArea"></div>
+    </div>
+
+
+    <div class="songs">
+        <h2 id="playlist-title">Our Playlist</h2>
+        <h3 id="playlist-subtitle">here are songs we listened in Tbilisi and some, I just wanted to share, enjoyy </h3>
+
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Sparks</h3>
+                <p>Coldplay</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/01 - Sparks.mp3">
+            </audio>
+            <a href="songs/01 - Sparks.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Jigsaw Falling Into Place</h3>
+                <p>Radiohead</p>
+            </div>
+
+            <audio controls>
+                <source src="songs/02 - Jigsaw Falling Into Place.mp3">
+            </audio>
+            <a href="songs/02 - Jigsaw Falling Into Place.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Don't Cry</h3>
+                <p>Guns N' Roses</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/03 - Dont Cry Original.mp3">
+            </audio>
+            <a href="songs/03 - Dont Cry Original.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Wonderwall</h3>
+                <p>Oasis</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/04 - Wonderwall - Remastered.mp3">
+            </audio>
+            <a href="songs/04 - Wonderwall - Remastered.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>No Surprises</h3>
+                <p>Radiohead</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/05 - No Surprises.mp3">
+            </audio>
+            <a href="songs/05 - No Surprises.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>November Rain</h3>
+                <p>Guns N' Roses</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/06 - November Rain.mp3">
+            </audio>
+            <a href="songs/06 - November Rain.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Let Down</h3>
+                <p>Radiohead</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/07 - Let Down.mp3">
+            </audio>
+            <a href="songs/07 - Let Down.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Yellow</h3>
+                <p>Coldplay</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/08 - Yellow.mp3">
+            </audio>
+            <a href="songs/08 - Yellow.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Michelle</h3>
+                <p>The Beatles</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/09 - Michelle - Remastered 2009.mp3">
+            </audio>
+            <a href="songs/09 - Michelle - Remastered 2009.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>No. 1 Party Anthem</h3>
+                <p>Arctic Monkeys</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/10 - No. 1 Party Anthem.mp3">
+            </audio>
+            <a href="songs/10 - No. 1 Party Anthem.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Knee Socks</h3>
+                <p>Arctic Monkeys</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/11 - Knee Socks.mp3">
+            </audio>
+            <a href="songs/11 - Knee Socks.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Why'd You Only Call Me When You're High?</h3>
+                <p>Arctic Monkeys</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/12 - Why'd You Only Call Me When You're High.mp3">
+            </audio>
+            <a href="songs/12 - Why'd You Only Call Me When You're High.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>The Man Who Sold The World</h3>
+                <p>Nirvana</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/13 - The Man Who Sold The World - Live.mp3">
+            </audio>
+            <a href="songs/13 - The Man Who Sold The World - Live.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Ex-Factor</h3>
+                <p>Ms. Lauryn Hill</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/14 - Ex-Factor.mp3">
+            </audio>
+            <a href="songs/14 - Ex-Factor.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Killing Me softly</h3>
+                <p>Fugees</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/15 - Killing Me Softly With His Song.mp3">
+            </audio>
+            <a href="songs/15 - Killing Me Softly With His Song.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Every Breath You Take</h3>
+                <p>The Police</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/16 - Every Breath You Take.mp3">
+            </audio>
+            <a href="songs/16 - Every Breath You Take.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Angie</h3>
+                <p>The Rolling Stones</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/17 - Angie - Remastered 2009.mp3">
+            </audio>
+            <a href="songs/17 - Angie - Remastered 2009.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Apocalypse</h3>
+                <p>Cigarettes After Sex</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/18 - Apocalypse.mp3">
+            </audio>
+            <a href="songs/18 - Apocalypse.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>505</h3>
+                <p>Arctic Monkeys</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/19 - 505.mp3">
+            </audio>
+            <a href="songs/19 - 505.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Still Loving You</h3>
+                <p>Scorpions</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/20 - Still Loving You.mp3">
+            </audio>
+            <a href="songs/20 - Still Loving You.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Stairway to Heaven</h3>
+                <p>Led Zeppelin</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/21 - Stairway to Heaven - Remaster.mp3">
+            </audio>
+            <a href="songs/21 - Stairway to Heaven - Remaster.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Hotel California</h3>
+                <p>Eagles</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/22 - Hotel California - 2013 Remaster.mp3">
+            </audio>
+            <a href="songs/22 - Hotel California - 2013 Remaster.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Just One Day</h3>
+                <p>BTS</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/23 - Just One Day.mp3">
+            </audio>
+            <a href="songs/23 - Just One Day.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>California Dreamin</h3>
+                <p>The Mamas & The Papas</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/24 - California Dreamin'.mp3">
+            </audio>
+            <a href="songs/24 - California Dreamin'.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Wicked Game</h3>
+                <p>Chris Isaak</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/25 - Wicked Game.mp3">
+            </audio>
+            <a href="songs/25 - Wicked Game.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Nothing Else matters</h3>
+                <p>Metallica</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/26 - Nothing Else Matters - Remastered 2021.mp3">
+            </audio>
+            <a href="songs/26 - Nothing Else Matters - Remastered 2021.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Time</h3>
+                <p>Pink Floyd</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/27 - Time.mp3">
+            </audio>
+            <a href="songs/27 - Time.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+        <div class="song-card">
+
+            <img src="photos/photo7.jpg" class="song-cover">
+
+            <div class="song-details">
+                <h3>Heart to Heart</h3>
+                <p>Mac DeMarco</p>
+            </div>
+
+
+            <audio controls>
+                <source src="songs/28 - Heart To Heart.mp3">
+            </audio>
+            <a href="songs/28 - Heart To Heart.mp3" download class="download-btn">
+                Download ⬇
+            </a>
+        </div>
+    </div>
+
+
+    <a href="https://drive.google.com/drive/folders/1TgObDVe4KB8g-6NxuILF0SXn_4lBvKC6?usp=drive_link" target="_blank"
+        class="playlist-btn" style="text-decoration: none; text-align: center;">
+        ⬇ Download Entire Playlist
+    </a>
+    <br>
+
+    <div class="secret-container">
+        <button class="love-btn" onclick="showLove()">
+            Click Me ❤️
+        </button>
+
+        <p id="secret" class="secret-message" style="display:none">
+            You are my favorite notification.
+        </p>
+    </div>
+
+    <section class="music-game">
+        <h2>🎵 Catch The Notes 🎵</h2>
+
+        <p>
+            Collect music notes ❤️<br>
+            ⭐ Golden stars = +2 points<br>
+            💣 Bombs = -1 point
+        </p>
+
+        <div id="game-score">0 / 20</div>
+
+        <div id="game-area"></div>
+
+        <div id="reward" hidden>
+            🎉 HAPPIEST BIRTHDAY TO YOU!
+        </div>
+        <div id="secret-polaroid" class="secret-polaroid">
+            <img src="photos/photo11.jpg" alt="Secret Memory">
+
+            <div class="polaroid-caption">
+                Maladeec
+            </div>
+        </div>
+    </section>
+    <div class="hidden-lemonade" onclick="showLemonade()">
+
+        <img src="assets/msxali.png">
+
+    </div>
+
+    <div id="lemon-message">
+
+        🍋 You found your favourite lemonade!
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
